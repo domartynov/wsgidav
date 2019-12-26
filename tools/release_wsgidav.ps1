@@ -7,9 +7,9 @@ $BuildEnvRoot = "C:\prj\env\wsgidav_build_3.6";
 $BuildFolder = "$ProjectRoot\build";
 
 
-$IGNORE_UNSTAGED_CHANGES = 0;
-$IGNORE_NON_MASTER_BRANCH = 0;
-$SKIP_TESTS = 0;
+$IGNORE_UNSTAGED_CHANGES = 1;
+$IGNORE_NON_MASTER_BRANCH = 1;
+$SKIP_TESTS = 1;
 $REUSE_BUILD_CACHE = 0;
 
 # ----------------------------------------------------------------------------

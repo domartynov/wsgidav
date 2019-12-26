@@ -4,3 +4,4 @@ json5~=0.8.5
 python-pam~=1.8
 PyYAML~=5.1
 six~=1.12
+fabulist~=1.2

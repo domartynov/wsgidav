@@ -257,6 +257,21 @@ See https://github.com/mar10/wsgidav for additional information.
         print("Command line args:")
         for k, v in cmdLineOpts.items():
             print("    {:>12}: {}".format(k, v))
+
+    from fabulist import Fabulist
+
+    fab = Fabulist()
+
+    templates = [
+        "$(Verb:ing) is better than $(verb:ing).",
+        "$(Noun:an) a day keeps the $(noun:plural) away.",
+        "If you want to $(verb) $(adv), $(verb) $(adv)!",
+        'Confucius says: "The one who wants to $(verb) must $(verb) $(adv) the $(noun)!"',
+        ]
+    print("Fortune cookies:")
+    for q in fab.generate_quotes(templates, count=10):
+        print("- ", q)
+
     return cmdLineOpts, parser
 
 
